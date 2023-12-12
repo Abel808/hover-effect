@@ -36,3 +36,35 @@ body{
 div:has(:hover) div:not(:hover){
     filter: blur(2px);
 }
+
+
+span{
+    display: inline-block;
+   
+}
+
+
+div:has(name:hover) {
+    transform: scale(1.1);
+} 
+
+
+.name:hover .bx:nth-child(1){
+    transform: translate(-33px,15px) rotate(-15deg);
+}
+
+.name:hover span:nth-child(2){
+   
+    transform: translate(-3px,-15px) rotate(23deg);
+
+}
+
+.name:hover span:nth-child(3){
+    
+    transform: translate(3px,15px) rotate(25deg);
+}
+
+.name:hover span:nth-child(4){
+    transform: translate(33px,-15px) rotate(-25deg);
+
+}
